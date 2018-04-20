@@ -70,6 +70,14 @@ fabric.properties
 # End of https://www.gitignore.io/api/phpstorm
 
 
+
+### VS Code ###
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+
 ### Composer ###
 composer.phar
 /vendor/
