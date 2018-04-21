@@ -3,7 +3,7 @@
   "type": "website",
   "license": "All rights reserved",
   "homepage": "https://github.com/fatima-alansari/open_blog_site",
-  "description": "PHP 5.6 Web application with a MySQL backend for community blogging",
+  "description": "PHP 5.6 Web application with a MySQL backend for community-based blogging",
   "keywords": [
     "university-project",
     "php5",
@@ -19,20 +19,14 @@
   ],
   
   "require": {
-    "php": ">=5.0.0,<6.0.0"
-  },
-
-  "require-dev": {
-    
+    "php": ">=5.0.0,<6.0.0",
+    "robmorgan/phinx": "^0.9.2",
+    "vlucas/phpdotenv": "^2.4"
   },
 
   "config": {
     "platform": {
       "php": "5.6"
     }
-  },
-
-  "autoload": {
-    
   }
 }
