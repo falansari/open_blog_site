@@ -1,0 +1,38 @@
+{
+  "name": "fatima-alansari/open_blog_site",
+  "type": "website",
+  "license": "All rights reserved",
+  "homepage": "https://github.com/fatima-alansari/open_blog_site",
+  "description": "PHP 5.6 Web application with a MySQL backend for community blogging",
+  "keywords": [
+    "university-project",
+    "php5",
+    "mysql",
+    "mvc-architecture"
+  ],
+  "authors": [
+    {
+      "name": "Fatima A. Alansari",
+      "email": "fatima.a.alansari@outlook.com",
+      "homepage": "https://github.com/fatima-alansari"
+    }
+  ],
+  
+  "require": {
+    "php": ">=5.0.0,<6.0.0"
+  },
+
+  "require-dev": {
+    
+  },
+
+  "config": {
+    "platform": {
+      "php": "5.6"
+    }
+  },
+
+  "autoload": {
+    
+  }
+}
