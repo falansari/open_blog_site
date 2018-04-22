@@ -86,3 +86,4 @@ composer.lock
 
 ### ENVIRONMENT ###
 .env
+phinx.yml
