@@ -24,6 +24,10 @@
     "vlucas/phpdotenv": "^2.4"
   },
 
+  "require-dev": {
+    "squizlabs/php_codesniffer": "*"
+  },
+
   "config": {
     "platform": {
       "php": "5.6"
