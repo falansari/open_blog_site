@@ -49,7 +49,7 @@ class CreateCommentResponsesTable extends AbstractMigration
             )
             ->addColumn('response', 'string', ['limit' => 300])
             ->addTimestamps()
-            ->addIndex('response', ['fulltext' => true])
+            ->addIndex('response', ['type' => 'fulltext'])
             ->create();
     }
 }
