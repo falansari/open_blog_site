@@ -47,6 +47,7 @@ class CreateArticleCommentsTable extends AbstractMigration
             )
             ->addColumn('comment', 'string', ['limit' => 300])
             ->addTimestamps()
+            ->addIndex('comment', ['fulltext' => true])
             ->create();
     }
 }

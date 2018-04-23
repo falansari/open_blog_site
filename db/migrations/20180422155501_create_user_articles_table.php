@@ -44,6 +44,8 @@ class CreateUserArticlesTable extends AbstractMigration
             ->addColumn('content', 'text')
             ->addColumn('view_count', 'integer')
             ->addTimestamps()
+            ->addIndex(['title', 'subtitle', 'content'], ['fulltext' => true])
+            ->addIndex('view_count')
             ->create();
     }
 }

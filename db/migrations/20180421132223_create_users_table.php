@@ -41,6 +41,8 @@ class CreateUsersTable extends AbstractMigration
             ->addColumn('password', 'char', ['limit' => 60])
             ->addTimestamps()
             ->addIndex(['username', 'email'], ['unique' => true])
+            // Composite index for rapid login
+            ->addIndex('email, password', ['name' => 'idx_login_credentials'])
             ->create();
     }
 
