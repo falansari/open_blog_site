@@ -35,9 +35,6 @@ class CreateRolesTable extends AbstractMigration
     {
         $table = $this->table('roles');
         $table->addColumn('role', 'char', ['limit' => 5])
-            // role's access rights in a json array format
-            // Access rights: create, read, update, delete (CRUD)
-            ->addColumn('role_access_rights', 'json')
             ->addTimestamps()
             ->addIndex('role', ['unique' => true])
             ->create();
