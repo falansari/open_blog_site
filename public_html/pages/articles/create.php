@@ -7,7 +7,7 @@
      * Create article page.
      */
 
-    require '../../layouts/header.html';
+    require '../../layouts/head.html';
     require '../../layouts/navbar.html';
   ?>
 

@@ -2,7 +2,7 @@
     /**
      * PHP version 5.6
      * 
-     * Website default/home page.
+     * Website user registration page.
      * 
      * @category Webpage
      * @package  Open_Blog_Site
@@ -10,7 +10,7 @@
      * @license  All rights reserved
      * @link     https://github.com/fatima-alansari/open_blog_site
      */
-      
+
       require 'layouts/head.html';
     ?>
 
@@ -22,8 +22,8 @@
 
     <main>
       <div class="navbar-template text-center">
-        <h1>Top Articles</h1>
-        <p class="lead text-info">What are you looking for?</p>
+        <h1>Register</h1>
+        <p class="lead text-info"></p>
       </div>
     </main>
 
