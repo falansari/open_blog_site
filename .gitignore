@@ -76,6 +76,9 @@ fabric.properties
 !.vscode/launch.json
 !.vscode/extensions.json
 
+### Netbeans ###
+/nbproject
+
 ### Composer ###
 composer.phar
 /vendor/
