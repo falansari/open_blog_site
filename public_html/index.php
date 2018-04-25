@@ -31,7 +31,7 @@
 
           $db = Database::getInstance();
 
-          $query = 'CALL top_five_articles()';
+          $query = 'CALL proc_fetch_top_five_articles()';
 
           $result = $db->multiFetch($query);
 
@@ -52,12 +52,12 @@
             for ($i = 0; $i < count($result); $i++ ) {
                 echo '<tr>
                 <td class="text-capitalize">
-                  <a href="/articles/'.$result[$i]->article_id.'">'
+                  <a href="/articles/view.php?id='.$result[$i]->article_id.'">'
                   .$result[$i]->title .'</a></td>
                 <td>'.$result[$i]->subtitle.'</td>
                 <td>'.date('M jS Y', strtotime($result[$i]->created_at)).'</td>
                 <td>'.$result[$i]->view_count.'</td>
-                <td><a href="/users/'.$result[$i]->user_id.'">'
+                <td><a href="/users/view.php?id='.$result[$i]->user_id.'">'
                   .$result[$i]->username.'</a></td>
                 </tr>';
             }

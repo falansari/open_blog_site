@@ -7,8 +7,8 @@
      * Edit article page.
      */
 
-    require '../../layouts/header.html';
-    require '../../layouts/navbar.html';
+    require '../layouts/head.html';
+    require '../layouts/navbar.html';
   ?>
 
   <body>
@@ -17,7 +17,7 @@
   </body>
 
   <?php
-    require '../../layouts/footer.html';
+    require '../layouts/footer.html';
   ?>
 
 </html>
