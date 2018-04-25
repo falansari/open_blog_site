@@ -1,23 +1,58 @@
-<html>
-
-  <?php
+    <?php
     /**
      * PHP version 5.6
      * 
-     * View article page.
+     * Article view page template.
+     * 
+     * @category Webpage
+     * @package  Open_Blog_Site
+     * @author   Fatima A. Alansari <fatima.a.alansari@outlook.com>
+     * @license  All rights reserved
+     * @link     https://github.com/fatima-alansari/open_blog_site
      */
+      
+      require '../layouts/head.html';
+    ?>
 
-    require '../../layouts/header.html';
-    require '../../layouts/navbar.html';
-  ?>
+  <body class='container'>
+    
+    <?php
+      require '../layouts/navbar.html';
 
-  <body>
-    <h1>View article</h1>
-    <p>accessible!</p>
+      $articleId = $_GET['id'];
+
+      require_once '../../Database.php';
+      $db = Database::getInstance();
+
+      /**
+       * Update article's view count
+       */
+      $updateCountQuery = 'CALL proc_update_article_view_count('.$articleId.')';
+      $db->querySQL($updateCountQuery);
+
+      /**
+       * Fetch article's data
+       */
+      $fetchQuery = 'CALL proc_fetch_article_info('.$articleId.')';
+      $result = $db->singleFetch($fetchQuery);
+
+    if ($result) {
+      print('title: '.$result->title);
+    } else {
+        echo 'This article does not exist.';
+    }
+    ?>
+
+    <main class="text-center">
+      <div class="navbar-template text-center">
+        <h1 class="text-capitalize"><?php /* article title */ ?></h1>
+        <p class="lead text-info"><?php /* article subtitle */ ?></p>
+      </div>
+    </main>
+
   </body>
 
-  <?php
-    require '../../layouts/footer.html';
-  ?>
-
+    <?php
+      require '../layouts/footer.html';
+    ?>
 </html>

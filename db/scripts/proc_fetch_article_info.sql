@@ -6,12 +6,12 @@ DELIMITER $$
 
 DROP PROCEDURE IF EXISTS proc_fetch_article_info$$
 
-CREATE PROCEDURE proc_fetch_article_info()
+CREATE PROCEDURE proc_fetch_article_info(IN articleId INT(11))
 SELECT ua.id article_id, ua.user_id, ua.title, ua.subtitle, ua.content, ua.view_count, 
   ua.created_at, ua.updated_at, u.username, u.first_name, u.last_name
 FROM user_articles ua, users u
 WHERE
-ua.id = 1
+ua.id = articleId
 AND
 ua.user_id = u.id
 $$
