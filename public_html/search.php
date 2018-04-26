@@ -7,8 +7,8 @@
      * Search articles page.
      */
 
-    require 'layouts/header.html';
-    require 'layouts/navbar.html';
+    require 'layouts/head.html';
+    require 'layouts/navbar.php';
   ?>
 
   <body>

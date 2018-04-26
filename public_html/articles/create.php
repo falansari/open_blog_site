@@ -8,7 +8,7 @@
      */
 
     require '../layouts/head.html';
-    require '../layouts/navbar.html';
+    require '../layouts/navbar.php';
   ?>
 
   <body>
