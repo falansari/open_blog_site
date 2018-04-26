@@ -11,11 +11,11 @@ Web app for writing, commenting on and sharing articles. Developed as an individ
 - [x] User login #7
 - [x] Articles view page #10
 - [x] Article views counter #14
-- [] Editable User profile #8
-- [] Create & update articles #9 #11
-- [] Add file attachments to articles #31
-- [] Comment on articles, & reply to comments #12
-- [] Access control for basic user & site admin #15 #16
+- [ ] Editable User profile #8
+- [ ] Create & update articles #9 #11
+- [ ] Add file attachments to articles #31
+- [ ] Comment on articles, & reply to comments #12
+- [ ] Access control for basic user & site admin #15 #16
 
 # Extras
 - [x] Own website design #17
@@ -23,15 +23,19 @@ Web app for writing, commenting on and sharing articles. Developed as an individ
 - [x] Database ERD diagram #1
 - [x] Database migration scripts (instead of just SQL dumps)
 - [x] Fully standards compliant code following the [PSR-2 coding standards](https://www.php-fig.org/psr/psr-2/)
-- [] reCAPTCHA #19
-- [] User password hashing & salting #20
-- [] Account email verification #21
-- [] Host site live on [Heroku](https://open-blog.herokuapp.com/) (currently broken server config) #22
+- [ ] reCAPTCHA #19
+- [ ] User password hashing & salting #20
+- [ ] Account email verification #21
+- [ ] Host site live on [Heroku](https://open-blog.herokuapp.com/) (currently broken server config) #22
 
 # Setup Guide
 
 To setup this site locally:
-1. Install from [git](https://github.com/falansari/open_blog_site.git) or download as [zip](https://github.com/falansari/open_blog_site/archive/master.zip)
+1. Clone from [git](https://github.com/falansari/open_blog_site.git):
+```bash
+git clone https://github.com/falansari/open_blog_site.git
+```
+or download as [zip](https://github.com/falansari/open_blog_site/archive/master.zip).
 2. Install [Composer](https://getcomposer.org/) and run the following command on git bash:
 ```bash
 composer install
