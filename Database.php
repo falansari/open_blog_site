@@ -6,7 +6,9 @@
  * Documented by Fatima A. Alansari <fatima.a.alansari@outlook.com>
  * 
  * @category Connector
+ * @package  Database
  * @author   Bahrain Polytechnic <polytechnic.staff@polytechnic.bh>
+ * @link     http://polytechnic.bh
  */
 
 /**
