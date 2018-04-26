@@ -15,9 +15,9 @@
 ?>
 <head>
     <!-- DATATABLES DEPENDENCIES -->
-    <script src="/js/jquery-3.3.1.min.js"></script>
-    <link rel="stylesheet" type="text/css" href="/DataTables/datatables.min.css"/>
-    <script type="text/javascript" src="/DataTables/datatables.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/v/bs/dt-1.10.16/cr-1.4.1/fc-3.2.4/fh-3.1.3/kt-2.3.2/r-2.2.1/rr-1.2.3/sc-1.4.4/datatables.min.css"/>
+    <script type="text/javascript" src="https://cdn.datatables.net/v/bs/dt-1.10.16/cr-1.4.1/fc-3.2.4/fh-3.1.3/kt-2.3.2/r-2.2.1/rr-1.2.3/sc-1.4.4/datatables.min.js"></script>
+
 </head>
 
   <body class='container'>
