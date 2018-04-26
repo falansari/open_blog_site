@@ -20,20 +20,18 @@
             <div class="row">
               <div class="col-md-12">
                 <form action="/search.php" method="POST">
-                  <fieldset>
-                    <div class="input-group" id="adv-search">
-                      <input class="form-control" type="search" 
-                        placeholder="Search articles..." name="search" 
-                        value="<?php if (isset($_POST['Search'])) { echo $_POST['Search']; }?>"/>
-                      <div class="input-group-btn">
-                        <div class="btn-group" role="group">
-                          <button class="btn btn-primary" type="submit">
-                            <span class="glyphicon glyphicon-search" aria-hidden="true"></span>
-                          </button>
-                        </div>
+                  <div class="input-group" id="adv-search">
+                    <input class="form-control" type="search" 
+                      placeholder="Search articles..." name="search" id="search"/>
+                    <input type="hidden" value="submit"/>
+                    <div class="input-group-btn">
+                      <div class="btn-group" role="group">
+                        <button class="btn btn-primary" type="button">
+                          <span class="glyphicon glyphicon-search" aria-hidden="true"></span>
+                        </button>
                       </div>
                     </div>
-                  </fieldset>
+                  </div>
                 </form>
               </div>
             </div>

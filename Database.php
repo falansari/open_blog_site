@@ -126,11 +126,11 @@ class Database
      */
     function multiFetch($sql) 
     {
-        $sql = $this->mkSafe($sql);
+        //$sql = $this->mkSafe($sql);
         $result = null;
         $counter = 0;
         if ($sql != null || $sql != '') {
-            $res = mysqli_query($this->dblink, $sql);
+            $res = mysqli_query($this->dblink, ($sql));
             while ($fet = mysqli_fetch_object($res)) {
                 $result[$counter] = $fet;
                 $counter++;

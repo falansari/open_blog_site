@@ -1,6 +1,14 @@
 /**
-Procedure: returns top five most popular articles based on view count, 
-even if fk user_id is null.
+ * MySQL version 8 InnoDB
+ * 
+ * Return top five most popular articles based on view count, 
+ * even if foreign key user_id is null.
+ * 
+ * @category procedure
+ * @package  Open_Blog_Site
+ * @author   Fatima A. Alansari <fatima.a.alansari@outlook.com>
+ * @license  All rights reserved
+ * @link     https://github.com/fatima-alansari/open_blog_site
  */
 DELIMITER $$
 
