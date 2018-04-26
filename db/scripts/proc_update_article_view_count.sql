@@ -1,6 +1,13 @@
 /**
-Procedure: Update article views count every time user accesses the article.
-Called in PHP page.
+ * MySQL version 8 InnoDB
+ * 
+ * Update article views count every time user accesses the article.
+ * 
+ * @category procedure
+ * @package  Open_Blog_Site
+ * @author   Fatima A. Alansari <fatima.a.alansari@outlook.com>
+ * @license  All rights reserved
+ * @link     https://github.com/fatima-alansari/open_blog_site
  */
 DELIMITER $$
 

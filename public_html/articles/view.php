@@ -17,7 +17,7 @@
   <body class='container'>
     
     <?php
-      require '../layouts/navbar.html';
+      require '../layouts/navbar.php';
 
       $articleId = $_GET['id'];
 

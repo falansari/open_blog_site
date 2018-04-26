@@ -17,7 +17,7 @@
   <body class='container'>
     
     <?php
-      require 'layouts/navbar.html';
+      require 'layouts/navbar.php';
     ?>
 
     <main>
@@ -27,7 +27,7 @@
       </div>
 
         <?php
-          require_once '../Database.php';
+          require_once $_SERVER['DOCUMENT_ROOT'].'/../Database.php';
 
           $db = Database::getInstance();
 

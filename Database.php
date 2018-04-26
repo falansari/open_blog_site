@@ -6,7 +6,9 @@
  * Documented by Fatima A. Alansari <fatima.a.alansari@outlook.com>
  * 
  * @category Connector
+ * @package  Database
  * @author   Bahrain Polytechnic <polytechnic.staff@polytechnic.bh>
+ * @link     http://polytechnic.bh
  */
 
 /**
@@ -124,11 +126,11 @@ class Database
      */
     function multiFetch($sql) 
     {
-        $sql = $this->mkSafe($sql);
+        //$sql = $this->mkSafe($sql);
         $result = null;
         $counter = 0;
         if ($sql != null || $sql != '') {
-            $res = mysqli_query($this->dblink, $sql);
+            $res = mysqli_query($this->dblink, ($sql));
             while ($fet = mysqli_fetch_object($res)) {
                 $result[$counter] = $fet;
                 $counter++;
